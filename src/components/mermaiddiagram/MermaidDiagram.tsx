@@ -59,6 +59,7 @@ export default function MermaidDiagram(props: MermaidDiagramProps) {
         <div className={props.className}
              onClick={props.onClick}
              id={container_id}
+             data-testid={props.testId}
              ref={updateDiagramRef}
         />
     );
