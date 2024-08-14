@@ -5,7 +5,7 @@ Simple React component to embed Mermaid diagrams.
 ## Getting started
 
 ```
-npm install @lightenna/react-mermaid-diagram
+npm install @lightenna/react-mermaid-diagram mermaid
 ```
 
 Then use the component in your React app:
