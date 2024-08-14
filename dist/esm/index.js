@@ -1,2 +1,2 @@
-import"react";import"mermaid";
+import t,{useState as e,useEffect as n,useCallback as r}from"react";import i from"mermaid";const a=a=>{const[o,s]=e(),[c,d]=e(),m=`${a.id||"d"+Date.now()}-mermaid`,l=a.children;n((()=>{i.initialize({startOnLoad:!0,logLevel:5})}),[]);const g=r((t=>{t&&s(t)}),[]);return n((()=>{o&&c?.svg&&(o.innerHTML=c.svg,c.bindFunctions?.(o))}),[o,c]),n((()=>{(l||0!==l.length)&&(async()=>{try{const t=await i.render(`${m}-svg`,l);d(t)}catch(t){a.onError?.(t)}})()}),[l]),t.createElement("div",{className:a.className,onClick:a.onClick,id:m,"data-testid":a.testId,ref:g})};export{a as MermaidDiagram};
 //# sourceMappingURL=index.js.map

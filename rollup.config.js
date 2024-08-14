@@ -37,8 +37,7 @@ export default [
         external: ["react", "react-dom"],
     },
     {
-        // hacked 'input' because "src/index.ts" doesn't pull everything from underneath it
-        input: "src/components/mermaiddiagram/index.ts",
+        input: "src/index.ts",
         output: [{ file: "dist/types.d.ts", format: "es" }],
         plugins: [dts.default()],
         external: [/\.css$/],

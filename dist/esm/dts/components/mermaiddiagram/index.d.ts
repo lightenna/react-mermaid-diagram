@@ -1,1 +1,1 @@
-export { default } from './MermaidDiagram';
+export { MermaidDiagram } from './MermaidDiagram';

@@ -9,6 +9,6 @@ interface MermaidDiagramProps {
     onError?: (error: any) => void;
 }
 
-declare function MermaidDiagram(props: MermaidDiagramProps): React.JSX.Element;
+declare const MermaidDiagram: (props: MermaidDiagramProps) => React.JSX.Element;
 
-export { MermaidDiagram as default };
+export { MermaidDiagram };

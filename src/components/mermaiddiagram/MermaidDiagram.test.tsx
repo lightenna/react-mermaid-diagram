@@ -1,6 +1,6 @@
 import React from "react";
 import { render, screen } from "@testing-library/react";
-import MermaidDiagram from "./MermaidDiagram";
+import {MermaidDiagram} from "./MermaidDiagram";
 
 describe("MermaidDiagram", () => {
     test("renders the MermaidDiagram component", () => {

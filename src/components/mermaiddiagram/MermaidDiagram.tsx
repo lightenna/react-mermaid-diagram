@@ -3,7 +3,7 @@ import mermaid, {RenderResult} from 'mermaid';
 import {MermaidDiagramProps} from "./MermaidDiagram.types";
 import React from "react";
 
-export default function MermaidDiagram(props: MermaidDiagramProps) {
+const MermaidDiagram = (props: MermaidDiagramProps) => {
     const [element, setElement] = useState<HTMLDivElement>();
     const [render_result, setRenderResult] = useState<RenderResult>();
 
@@ -64,3 +64,5 @@ export default function MermaidDiagram(props: MermaidDiagramProps) {
         />
     );
 }
+
+export { MermaidDiagram };
