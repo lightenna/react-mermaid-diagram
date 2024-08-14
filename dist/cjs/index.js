@@ -1,2 +1,2 @@
-"use strict";Object.defineProperty(exports,"__esModule",{value:!0});require("tslib").__exportStar(require("./components"),exports);
+"use strict";require("react"),require("mermaid");
 //# sourceMappingURL=index.js.map

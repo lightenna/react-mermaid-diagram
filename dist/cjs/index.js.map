@@ -1,1 +1,1 @@
-{"version":3,"file":"index.js","sources":["../../src/index.ts"],"sourcesContent":["export * from './components';"],"names":["__exportStar","require","exports"],"mappings":"qFAA6BA,aAAAC,QAAA,gBAAAC"}
+{"version":3,"file":"index.js","sources":[],"sourcesContent":[],"names":[],"mappings":""}

@@ -26,7 +26,9 @@ export default [
         ],
         plugins: [
             peerDepsExternal(),
-            resolve(),
+            resolve({
+                extensions: ['.js', '.jsx', '.ts', '.tsx'],
+            }),
             commonjs(),
             typescript({ tsconfig: "./tsconfig.json" }),
             terser(),
@@ -35,7 +37,8 @@ export default [
         external: ["react", "react-dom"],
     },
     {
-        input: "src/index.ts",
+        // hacked 'input' because "src/index.ts" doesn't pull everything from underneath it
+        input: "src/components/mermaiddiagram/index.ts",
         output: [{ file: "dist/types.d.ts", format: "es" }],
         plugins: [dts.default()],
         external: [/\.css$/],
