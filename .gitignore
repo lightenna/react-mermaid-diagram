@@ -1,0 +1,41 @@
+# Ignore idea config
+.idea
+
+# Node.js
+**/node_modules
+# don't include local-only env files
+.env
+.env*.local
+**/.env.development.local
+
+# Next.js and Vercel
+.vercel
+**/.pnp
+.pnp.js
+**/coverage
+**/.next/
+**/out/
+# production
+**/build
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+# service workers
+**/public/sw.js
+**/public/sw.js.map
+**/public/workbox-*
+
+# ignore spurious logs
+app/debug.log
+**/newrelic_agent.log
+
+# ignore python libraries
+*_venv/
+*__pycache__*
+
+# misc
+.DS_Store
