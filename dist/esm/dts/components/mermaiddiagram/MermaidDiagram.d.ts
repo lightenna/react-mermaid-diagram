@@ -1,4 +1,4 @@
+import { ReactElement } from "react";
 import { MermaidDiagramProps } from "./MermaidDiagram.types";
-import React from "react";
-declare const MermaidDiagram: (props: MermaidDiagramProps) => React.JSX.Element;
+declare const MermaidDiagram: (props: MermaidDiagramProps) => ReactElement;
 export { MermaidDiagram };

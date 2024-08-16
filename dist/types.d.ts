@@ -1,4 +1,4 @@
-import React, { MouseEvent } from 'react';
+import { MouseEvent, ReactElement } from 'react';
 
 interface MermaidDiagramProps {
     children: string;
@@ -9,6 +9,6 @@ interface MermaidDiagramProps {
     onError?: (error: any) => void;
 }
 
-declare const MermaidDiagram: (props: MermaidDiagramProps) => React.JSX.Element;
+declare const MermaidDiagram: (props: MermaidDiagramProps) => ReactElement;
 
 export { MermaidDiagram };

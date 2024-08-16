@@ -1,9 +1,9 @@
-import {useCallback, useEffect, useState} from "react";
+import {ReactElement, useCallback, useEffect, useState} from "react";
 import mermaid, {RenderResult} from 'mermaid';
 import {MermaidDiagramProps} from "./MermaidDiagram.types";
 import React from "react";
 
-const MermaidDiagram = (props: MermaidDiagramProps) => {
+const MermaidDiagram = (props: MermaidDiagramProps): ReactElement => {
     const [element, setElement] = useState<HTMLDivElement>();
     const [render_result, setRenderResult] = useState<RenderResult>();
 
