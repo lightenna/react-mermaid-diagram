@@ -1,5 +1,5 @@
 import { StoryFn, Meta } from "@storybook/react";
-import MermaidDiagram from "./MermaidDiagram";
+import { MermaidDiagram } from "./MermaidDiagram";
 import React from "react";
 
 export default {

@@ -1,1 +1,1 @@
-export { MermaidDiagram } from './mermaiddiagram';
+export * from './mermaiddiagram';

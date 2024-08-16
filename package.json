@@ -1,7 +1,7 @@
 {
   "name": "@lightenna/react-mermaid-diagram",
   "homepage": "https://github.com/lightenna/react-mermaid-diagram",
-  "version": "1.0.15",
+  "version": "1.0.16",
   "type": "module",
   "module": "dist/esm/index.js",
   "types": "dist/types.d.ts",
@@ -46,6 +46,7 @@
     "rollup-plugin-postcss": "^4.0.2",
     "storybook": "^8.2.9",
     "ts-jest": "^29.2.4",
+    "ts-node": "^10.9.2",
     "tslib": "^2.6.3",
     "typescript": "^5.5.4"
   },

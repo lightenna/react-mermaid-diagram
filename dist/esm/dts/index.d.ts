@@ -1,1 +1,1 @@
-export { MermaidDiagram } from './components';
+export * from './components';
