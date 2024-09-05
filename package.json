@@ -1,7 +1,7 @@
 {
   "name": "@lightenna/react-mermaid-diagram",
   "homepage": "https://github.com/lightenna/react-mermaid-diagram",
-  "version": "1.0.16",
+  "version": "1.0.17",
   "type": "module",
   "module": "dist/esm/index.js",
   "types": "dist/types.d.ts",
@@ -51,8 +51,8 @@
     "typescript": "^5.5.4"
   },
   "peerDependencies": {
-    "mermaid": "^10.9.1",
-    "react": "^18.0.0"
+    "mermaid": ">=10.9.1",
+    "react": ">=18.0.0"
   },
   "files": [
     "dist"
