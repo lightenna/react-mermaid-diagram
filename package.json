@@ -1,7 +1,7 @@
 {
   "name": "@lightenna/react-mermaid-diagram",
   "homepage": "https://github.com/lightenna/react-mermaid-diagram",
-  "version": "1.0.21",
+  "version": "1.0.22",
   "type": "module",
   "module": "dist/esm/index.js",
   "types": "dist/types.d.ts",

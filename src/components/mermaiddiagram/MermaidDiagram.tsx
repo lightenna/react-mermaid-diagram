@@ -22,6 +22,7 @@ const MermaidDiagram = (props: MermaidDiagramProps): ReactElement => {
             securityLevel: props.securityLevel || 'strict',
             theme: props.theme || "default",
             logLevel: props.logLevel || 5,
+            suppressErrorRendering: props.suppressErrorRendering || false,
         });
     },[props.securityLevel, props.theme, props.logLevel]);
 
