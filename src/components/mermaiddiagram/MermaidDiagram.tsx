@@ -1,16 +1,14 @@
-import {ReactElement, useCallback, useEffect, useState} from "react";
+import {ReactElement, useCallback, useEffect, useRef, useState} from "react";
 import mermaid, {RenderResult} from 'mermaid';
 import {MermaidDiagramProps} from "./MermaidDiagram.types";
 import React from "react";
 
-let instance_count: number;
-
 const MermaidDiagram = (props: MermaidDiagramProps): ReactElement => {
     const [element, setElement] = useState<HTMLDivElement>();
     const [render_result, setRenderResult] = useState<RenderResult>();
-    if (instance_count === undefined) instance_count = 0;
 
-    const container_id = `${props.id || 'd' + (instance_count++)}-mermaid`;
+	const idRef = useRef<string>(`${props.id || 'd'}-${Math.random().toString(36).substr(2, 9)}`)
+	const container_id = `${idRef.current}-mermaid`
     const diagram_text = props.children;
     const render_js = !props.disableJs;
 
